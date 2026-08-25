@@ -1128,7 +1128,6 @@ button {
 
 .projects {
   padding: 120px 0;
-
   background: var(--light);
 }
 
@@ -1138,7 +1137,6 @@ button {
 
 .projects-header {
   max-width: 800px;
-
   margin-bottom: 85px;
 }
 
@@ -1146,11 +1144,9 @@ button {
   margin-bottom: 24px;
 
   font-size: clamp(38px, 4vw, 56px);
-
   font-weight: 800;
 
   line-height: 1.12;
-
   letter-spacing: -2px;
 
   color: var(--dark);
@@ -1158,7 +1154,6 @@ button {
 
 .projects-header h2 span {
   display: block;
-
   color: var(--primary);
 }
 
@@ -1166,7 +1161,6 @@ button {
   max-width: 680px;
 
   font-size: 16px;
-
   line-height: 1.8;
 
   color: var(--text);
@@ -1193,7 +1187,7 @@ button {
   gap: 75px;
 }
 
-/* Alternate project layout */
+/* Alternate desktop layout */
 
 .featured-project.project-reverse .featured-project-image {
   order: 2;
@@ -1212,14 +1206,13 @@ button {
 
   width: 100%;
 
-  /* Keeps every featured image the same proportion */
   aspect-ratio: 16 / 10;
 
   overflow: hidden;
 
-  border-radius: 20px;
-
   background: #e8edf3;
+
+  border-radius: 18px;
 
   box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
 }
@@ -1248,8 +1241,6 @@ button {
   max-width: 520px;
 }
 
-/* Project Meta */
-
 .project-meta {
   display: flex;
   align-items: center;
@@ -1271,35 +1262,27 @@ button {
   font-weight: 700;
 
   text-transform: uppercase;
-
   letter-spacing: 1.5px;
 
   color: var(--text);
 }
 
-/* Project Title */
-
 .featured-project-content h3 {
   margin-bottom: 18px;
 
   font-size: clamp(28px, 3vw, 40px);
-
   font-weight: 800;
 
   line-height: 1.2;
-
   letter-spacing: -1.3px;
 
   color: var(--dark);
 }
 
-/* Project Description */
-
 .featured-project-content > p {
   margin-bottom: 24px;
 
   font-size: 15px;
-
   line-height: 1.85;
 
   color: var(--text);
@@ -1329,7 +1312,6 @@ button {
   background: var(--white);
 
   border: 1px solid var(--border);
-
   border-radius: 50px;
 }
 
@@ -1365,7 +1347,6 @@ button {
 
 .project-link:hover {
   color: var(--primary);
-
   border-color: var(--primary);
 }
 
@@ -1387,11 +1368,9 @@ button {
 
 .more-projects-header h3 {
   font-size: clamp(28px, 3vw, 40px);
-
   font-weight: 800;
 
   line-height: 1.2;
-
   letter-spacing: -1.3px;
 
   color: var(--dark);
@@ -1414,12 +1393,14 @@ button {
 ========================================================= */
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+
   overflow: hidden;
 
   background: var(--white);
 
   border: 1px solid var(--border);
-
   border-radius: 18px;
 
   transition:
@@ -1442,7 +1423,6 @@ button {
 
   width: 100%;
 
-  /* Same proportion for all smaller project images */
   aspect-ratio: 16 / 10;
 
   overflow: hidden;
@@ -1471,6 +1451,11 @@ button {
 ========================================================= */
 
 .project-card-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
   padding: 25px;
 }
 
@@ -1483,7 +1468,6 @@ button {
   font-weight: 700;
 
   text-transform: uppercase;
-
   letter-spacing: 1.4px;
 
   color: var(--primary);
@@ -1496,33 +1480,29 @@ button {
   font-weight: 800;
 
   line-height: 1.3;
-
   letter-spacing: -0.5px;
 
   color: var(--dark);
 }
 
 .project-card-content p {
-  min-height: 80px;
-
   margin-bottom: 22px;
 
   font-size: 13px;
-
   line-height: 1.75;
 
   color: var(--text);
 }
 
-/* =========================================================
-   PROJECT CARD LINK
-========================================================= */
-
 .project-card-link {
   display: inline-flex;
   align-items: center;
 
+  align-self: flex-start;
+
   gap: 6px;
+
+  margin-top: auto;
 
   font-size: 13px;
   font-weight: 700;
@@ -1545,11 +1525,12 @@ button {
 }
 
 /* =========================================================
-   30 WEBSITES STAT
+   30+ WEBSITES STAT
 ========================================================= */
 
 .projects-stat {
   display: grid;
+
   grid-template-columns: auto 1fr;
 
   align-items: center;
@@ -1561,13 +1542,8 @@ button {
 
   background: var(--dark);
 
-  /* No rounded corners */
   border-radius: 0;
 }
-
-/* =========================================================
-   STAT NUMBER
-========================================================= */
 
 .projects-stat-number {
   min-width: 190px;
@@ -1576,7 +1552,6 @@ button {
   font-weight: 800;
 
   line-height: 1;
-
   letter-spacing: -6px;
 
   color: var(--white);
@@ -1585,10 +1560,6 @@ button {
 .projects-stat-number span {
   color: var(--primary);
 }
-
-/* =========================================================
-   STAT CONTENT
-========================================================= */
 
 .projects-stat-content {
   max-width: 700px;
@@ -1601,7 +1572,6 @@ button {
   font-weight: 800;
 
   line-height: 1.2;
-
   letter-spacing: -1px;
 
   color: var(--white);
@@ -1611,8 +1581,6 @@ button {
   max-width: 680px;
 
   font-size: 15px;
-  font-weight: 400;
-
   line-height: 1.9;
 
   color: #94a3b8;
@@ -1623,10 +1591,76 @@ button {
 ========================================================= */
 
 @media (max-width: 900px) {
+  .projects {
+    padding: 90px 0;
+  }
+
+  .projects-header {
+    margin-bottom: 65px;
+  }
+
+  /* =====================================================
+     FEATURED PROJECTS
+     
+     On tablet:
+     Content first
+     Image underneath
+  ====================================================== */
+
+  .featured-projects {
+    gap: 80px;
+  }
+
+  .featured-project {
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 30px;
+  }
+
+  /* IMPORTANT:
+     Content appears before image */
+
+  .featured-project .featured-project-content,
+  .featured-project.project-reverse .featured-project-content {
+    order: 1;
+
+    max-width: 700px;
+  }
+
+  .featured-project .featured-project-image,
+  .featured-project.project-reverse .featured-project-image {
+    order: 2;
+
+    width: 100%;
+    max-width: 700px;
+
+    aspect-ratio: 16 / 9;
+
+    margin-top: 5px;
+
+    border-radius: 14px;
+  }
+
+  /* More projects */
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .more-projects {
+    margin-top: 110px;
+  }
+
+  /* Stat */
+
   .projects-stat {
     gap: 45px;
 
     margin-top: 85px;
+
     padding: 55px 45px;
   }
 
@@ -1644,12 +1678,198 @@ button {
 ========================================================= */
 
 @media (max-width: 700px) {
+  .projects {
+    padding: 70px 0;
+  }
+
+  /* =====================================================
+     HEADER
+  ====================================================== */
+
+  .projects-header {
+    margin-bottom: 50px;
+  }
+
+  .projects-header h2 {
+    font-size: 36px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .projects-intro {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  /* =====================================================
+     FEATURED PROJECTS MOBILE
+
+     ORDER:
+     01 / Category
+     Project Name
+     Description
+     Technologies
+     Visit Website
+     Image
+  ====================================================== */
+
+  .featured-projects {
+    gap: 75px;
+  }
+
+  .featured-project {
+    display: flex;
+    flex-direction: column;
+
+    gap: 26px;
+  }
+
+  .featured-project .featured-project-content,
+  .featured-project.project-reverse .featured-project-content {
+    order: 1;
+
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .featured-project .featured-project-image,
+  .featured-project.project-reverse .featured-project-image {
+    order: 2;
+
+    width: 100%;
+    max-width: 100%;
+
+    aspect-ratio: 16 / 10;
+
+    margin-top: 2px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
+  }
+
+  /* Meta */
+
+  .project-meta {
+    margin-bottom: 14px;
+  }
+
+  .project-meta span:first-child {
+    font-size: 11px;
+  }
+
+  .project-meta span:last-child {
+    font-size: 10px;
+
+    letter-spacing: 1.2px;
+  }
+
+  /* Title */
+
+  .featured-project-content h3 {
+    margin-bottom: 15px;
+
+    font-size: 28px;
+
+    letter-spacing: -1px;
+  }
+
+  /* Description */
+
+  .featured-project-content > p {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  /* Technologies */
+
+  .project-tech {
+    gap: 6px;
+
+    margin-bottom: 22px;
+  }
+
+  .project-tech span {
+    padding: 6px 10px;
+
+    font-size: 10px;
+  }
+
+  /* Website link */
+
+  .project-link {
+    font-size: 13px;
+  }
+
+  /* =====================================================
+     MORE PROJECTS
+  ====================================================== */
+
+  .more-projects {
+    margin-top: 90px;
+  }
+
+  .more-projects-header {
+    margin-bottom: 35px;
+  }
+
+  .more-projects-header h3 {
+    font-size: 30px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+  /*
+     Small project cards:
+     content first, screenshot last
+  */
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 12px;
+  }
+
+  .project-card-content {
+    order: 1;
+
+    padding: 25px;
+  }
+
+  .project-card-image {
+    order: 2;
+
+    aspect-ratio: 16 / 10;
+  }
+
+  .project-card-content p {
+    min-height: auto;
+
+    margin-bottom: 20px;
+  }
+
+  .project-card-link {
+    margin-top: 5px;
+  }
+
+  /* =====================================================
+     30+ STAT
+  ====================================================== */
+
   .projects-stat {
     grid-template-columns: 1fr;
 
     gap: 25px;
 
     margin-top: 70px;
+
     padding: 45px 30px;
   }
 
@@ -1662,8 +1882,6 @@ button {
   }
 
   .projects-stat-content h3 {
-    margin-bottom: 12px;
-
     font-size: 26px;
   }
 
@@ -1679,6 +1897,37 @@ button {
 ========================================================= */
 
 @media (max-width: 480px) {
+  .projects-header h2 {
+    font-size: 34px;
+  }
+
+  /* Featured image */
+
+  .featured-project .featured-project-image,
+  .featured-project.project-reverse .featured-project-image {
+    aspect-ratio: 16 / 10;
+
+    border-radius: 8px;
+  }
+
+  /* Project title */
+
+  .featured-project-content h3 {
+    font-size: 26px;
+  }
+
+  /* More project cards */
+
+  .project-card-content {
+    padding: 22px;
+  }
+
+  .project-card-image {
+    aspect-ratio: 16 / 10;
+  }
+
+  /* Stat */
+
   .projects-stat {
     padding: 38px 24px;
   }
